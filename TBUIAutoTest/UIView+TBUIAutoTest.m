@@ -10,6 +10,7 @@
 #import "UIResponder+TBUIAutoTest.h"
 #import <objc/runtime.h>
 #import "TBUIAutoTest.h"
+#import "UIAutoLongPressGestureRecognizer.h"
 
 #define kiOS8Later SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")
 
@@ -150,7 +151,16 @@
         return;
     }
     [self tb_addSubview:view];
-    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:view action:@selector(longPress:)];
+    
+    //已经add过了，防止重复add 手势
+    //- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+    //添加了多个subview之后 该delegate方法会被触发多次，导致奔溃
+    for (UIGestureRecognizer *ges in view.gestureRecognizers) {
+        if ([ges isKindOfClass:[UIAutoLongPressGestureRecognizer class]]) {
+            return ;
+        }
+    }
+    UIAutoLongPressGestureRecognizer *longPress = [[UIAutoLongPressGestureRecognizer alloc] initWithTarget:view action:@selector(longPress:)];
     longPress.delegate = [TBUIAutoTest sharedInstance];
     [view addGestureRecognizer:longPress];
 }

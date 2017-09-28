@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BD958F71F7C84DF001AF55B /* UIAutoLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD958F61F7C84DF001AF55B /* UIAutoLongPressGestureRecognizer.m */; };
 		A477FDCC1DD07657000F8482 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A477FDCB1DD07657000F8482 /* main.m */; };
 		A477FDCF1DD07657000F8482 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A477FDCE1DD07657000F8482 /* AppDelegate.m */; };
 		A477FDD21DD07657000F8482 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A477FDD11DD07657000F8482 /* ViewController.m */; };
@@ -52,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1BD958F51F7C84DF001AF55B /* UIAutoLongPressGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIAutoLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		1BD958F61F7C84DF001AF55B /* UIAutoLongPressGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIAutoLongPressGestureRecognizer.m; sourceTree = "<group>"; };
 		A477FDC71DD07657000F8482 /* TBUIAutoTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TBUIAutoTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A477FDCB1DD07657000F8482 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A477FDCD1DD07657000F8482 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				A477FDE71DD076B7000F8482 /* UIResponder+TBUIAutoTest.m */,
 				A477FDE81DD076B7000F8482 /* UIView+TBUIAutoTest.h */,
 				A477FDE91DD076B7000F8482 /* UIView+TBUIAutoTest.m */,
+				1BD958F51F7C84DF001AF55B /* UIAutoLongPressGestureRecognizer.h */,
+				1BD958F61F7C84DF001AF55B /* UIAutoLongPressGestureRecognizer.m */,
 			);
 			name = TBUIAutoTest;
 			path = ../../TBUIAutoTest;
@@ -279,6 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD958F71F7C84DF001AF55B /* UIAutoLongPressGestureRecognizer.m in Sources */,
 				A477FDED1DD076B7000F8482 /* UIView+TBUIAutoTest.m in Sources */,
 				A477FDD21DD07657000F8482 /* ViewController.m in Sources */,
 				A477FDCF1DD07657000F8482 /* AppDelegate.m in Sources */,
@@ -520,6 +526,7 @@
 				A4FA505F1E751F4F0086DF0F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
